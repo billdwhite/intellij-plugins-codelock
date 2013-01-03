@@ -1,10 +1,11 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
 <idea-plugin>
-    <name>CodeLock</name>
-    <description>Updated version of codelock by Gil Tzadikevitch which runs with Intellij IDEA 12.
-        Allows locking of classes, methods and regions of code to protect
-        important parts of the code from accidental change. Removed unused CodeGraph
-        dependencies.
+    <name>CodeLock 1.2</name>
+    <description>Updated version of codelock by Gil Tzadikevitch (updated with Gil's permission)
+        which runs with Intellij IDEA 12. Allows locking of classes, methods and regions
+        of code to protect important parts of the code from accidental change. Removed unused
+        CodeGraph dependencies and updated API calls to make it work with the latest versions
+        of Intellij products.
     </description>
     <version>1.2</version>
     <vendor>Gil Tzadikevitch, Bill White</vendor>
