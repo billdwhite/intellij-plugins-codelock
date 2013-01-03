@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="CodeLock" basedir=".">
+    <!-- Parts of this script was originated from PsiViewer's build script -->
+
+    <property name="project.name" value="${ant.project.name}"/>
+
+    <!-- Source directories -->
+    <property name="dir.src" value="${basedir}/src"/>
+    <property name="dir.resources" value="${basedir}/resources"/>
+
+    <!-- Destination directories -->
+    <property name="dir.build" value="${basedir}/build"/>
+    <property name="dir.build.classes" value="${dir.build}/classes"/>
+    <property name="dir.build.dist" value="${dir.build}/dist"/>
+
+    <!-- Deployment directories -->
+    <!-- Set the IDEA installation directory here -->
+    <property name="dir.idea" value="C:/Program Files/JetBrains/IntelliJ IDEA 7.0.1"/>
+    <property name="dir.idea.lib" value="${dir.idea}/lib"/>
+    <property name="dir.idea.plugins" value="${user.home}/.IntelliJIdea/config/plugins"/>
+
+    <!-- Compiler settings -->
+    <property name="compile.debug" value="on"/>
+
+    <path id="compile.classpath">
+        <fileset dir="${dir.idea.lib}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="all" description="clean, init, compile, jar">
+        <antcall target="clean"/>
+        <antcall target="init"/>
+        <antcall target="compile"/>
+        <antcall target="jar"/>
+    </target>
+
+    <target name="init" description="Creates build dirs">
+        <mkdir dir="${dir.build.classes}"/>
+        <mkdir dir="${dir.build.dist}"/>
+    </target>
+
+    <target name="clean" description="Deletes build dir and all its content">
+        <delete dir="${dir.build}"/>
+    </target>
+
+    <target name="compile" description="Only compiles the plugin">
+        <javac srcdir="${dir.src}" destdir="${dir.build.classes}" debug="${compile.debug}">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+    <target name="jar" description="Creates the jar file of the plugin">
+        <property name="plugin.jar" value="${dir.build.dist}/${project.name}.jar"/>
+        <jar jarfile="${plugin.jar}">
+            <fileset dir="${dir.build.classes}" includes="**/*.class" excludes="**/test/*.class"/>
+            <fileset dir="${basedir}" includes="META-INF/**"/>
+        </jar>
+    </target>
+
+
+</project>

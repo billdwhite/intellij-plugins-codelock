@@ -1,0 +1,37 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+    <name>CodeLock</name>
+    <description>Updated version of codelock by Gil Tzadikevitch which runs with Intellij IDEA 12.
+        Allows locking of classes, methods and regions of code to protect
+        important parts of the code from accidental change. Removed unused CodeGraph
+        dependencies.
+    </description>
+    <version>1.2</version>
+    <vendor>Gil Tzadikevitch, Bill White</vendor>
+    <idea-version since-build="123.94"/>
+    <project-components>
+        <component>
+            <implementation-class>codelockplugin.LockingPlugin</implementation-class>
+        </component>
+    </project-components>
+    <actions>
+        <action id="CodeElementLocking" class="codelockplugin.handlers.ActionElementLock" text="Lock Code"
+                description="Locks the class"/>
+        <action id="CodeRegionLock" class="codelockplugin.handlers.ActionRegionLock" text="Lock Region"
+                description="Locks the selectionregion"/>
+        <action id="CodeLockMenu" class="codelockplugin.handlers.ActionCodeLockMenu" text="CodeLock Menu.."
+                description="open the control menu for code locking plugin"/>
+        <group id="CodeLockMenuViewPopup" text="CodeLock" popup="true">
+            <reference ref="CodeElementLocking"/>
+            <reference ref="CodeLockMenu"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <add-to-group group-id="StructureViewPopupMenu" anchor="last"/>
+        </group>
+        <group id="CodeLockMenuEditor" text="CodeLock" popup="true">
+            <reference ref="CodeElementLocking"/>
+            <reference ref="CodeRegionLock"/>
+            <reference ref="CodeLockMenu"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </group>
+    </actions>
+</idea-plugin>
