@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9928b61d-8053-48dd-88e1-bcd93ba5b02b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.jar" afterPath="$PROJECT_DIR$/CodeLock.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.iml" afterPath="$PROJECT_DIR$/CodeLock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.ipr" afterPath="$PROJECT_DIR$/CodeLock.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.iws" afterPath="$PROJECT_DIR$/CodeLock.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/LockManagerUI.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/LockManagerUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedElement.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFile.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFunction.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRangeMarker.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRangeMarker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegion.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegionsFile.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegionsFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedTreeManager.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedTreeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java" afterPath="$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/RemoveElementWithChildDialog.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/RemoveElementWithChildDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
     </list>
     <ignored path="CodeLock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,7 +154,7 @@
       <file leaf-file-name="LockingPlugin.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="13" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.013617021">
+            <state line="149" column="63" selection-start="5188" selection-end="5188" vertical-scroll-proportion="0.013333334">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -734,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="13" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.013617021">
+        <state line="149" column="63" selection-start="5188" selection-end="5188" vertical-scroll-proportion="0.013333334">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
