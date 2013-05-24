@@ -9,9 +9,9 @@ import org.apache.log4j.Logger;
 
 import javax.swing.tree.TreeNode;
 import java.util.Enumeration;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Set;
-import java.util.HashSet;
 
 /**
  * Abstract class that all Locked elements inherit from.

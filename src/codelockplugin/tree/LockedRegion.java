@@ -1,7 +1,7 @@
 package codelockplugin.tree;
 
-import com.intellij.psi.PsiFile;
 import codelockplugin.LockingPlugin;
+import com.intellij.psi.PsiFile;
 
 /**
  * Abstract class that all of the Locked region elements in herit from.

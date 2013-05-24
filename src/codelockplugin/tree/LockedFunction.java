@@ -1,19 +1,17 @@
 package codelockplugin.tree;
 
+import codelockplugin.LockingPlugin;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.util.InvalidDataException;
 import com.intellij.openapi.util.WriteExternalException;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiMethod;
 import com.intellij.psi.PsiNamedElement;
-import com.intellij.psi.PsiClass;
-import org.jdom.Element;
 import org.apache.log4j.Logger;
+import org.jdom.Element;
 
 import javax.swing.tree.TreeNode;
 import java.util.Enumeration;
-
-import codelockplugin.LockingPlugin;
 
 /**
  * Represents a locked function in the code.

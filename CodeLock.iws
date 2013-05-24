@@ -2,12 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9928b61d-8053-48dd-88e1-bcd93ba5b02b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.jar" afterPath="$PROJECT_DIR$/CodeLock.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.iml" afterPath="$PROJECT_DIR$/CodeLock.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.ipr" afterPath="$PROJECT_DIR$/CodeLock.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLock.iws" afterPath="$PROJECT_DIR$/CodeLock.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/LockManagerUI.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/LockManagerUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java" afterPath="$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedElement.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFile.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFunction.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRangeMarker.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRangeMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegion.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegionsFile.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedRegionsFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/tree/LockedTreeManager.java" afterPath="$PROJECT_DIR$/src/codelockplugin/tree/LockedTreeManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java" afterPath="$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codelockplugin/ui/RemoveElementWithChildDialog.java" afterPath="$PROJECT_DIR$/src/codelockplugin/ui/RemoveElementWithChildDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
     </list>
     <ignored path="CodeLock.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/plugin.xml" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1357219805260" ignored="false" />
-    <file path="/Dummy.txt" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1357220100614" ignored="false" />
+    <file path="/plugin.xml" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1369358189056" ignored="false" />
+    <file path="/Dummy.txt" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1369357048555" ignored="false" />
+    <file path="/LockingPlugin.java" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1369362389940" ignored="false" />
+    <file path="/a.dummy" changelist="9928b61d-8053-48dd-88e1-bcd93ba5b02b" time="1369358196914" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +52,7 @@
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
@@ -46,6 +69,7 @@
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
@@ -66,11 +90,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="14" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4211382">
+            <state line="35" column="45" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-19.74074">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionElementLock.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="55" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.3076925">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeChangeAttemptDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="18" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#870#997#0" expanded="false" />
+                <element signature="e#986#987#0" expanded="false" />
+                <element signature="e#1040#1439#0" expanded="false" />
+                <element signature="e#1428#1429#0" expanded="false" />
+                <marker date="1369360788000" expanded="false" signature="5058:5183" placeholder="UI Designer generated code" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionRegionLock.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="54" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockDocumentListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="-15.36">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockedCodeModificationAttemptHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="3" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.12">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockedClass.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/tree/LockedClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="240" column="0" selection-start="9012" selection-end="9012" vertical-scroll-proportion="-4.8846154">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockingPlugin.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="13" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.013617021">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionCodeLockMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.68">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,15 +210,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java" />
         <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/tree/LockedClass.java" />
+        <option value="$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="2534" />
-    <option name="height" value="1379" />
+    <option name="height" value="1377" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -129,6 +253,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -157,28 +283,148 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelockplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelockplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelockplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LockManagerUI" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelockplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelockplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handlers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="last_opened_file_path" value="$DEV_DIR$/git/github/intellijplugins/SyncEdit2" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="944e85b1-58f1-455b-8ec4-b550b3295208">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="Regex">
     <option name="pos1" value="218" />
@@ -295,31 +541,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="2534" height="1379" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="2534" height="1377" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Notes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939662" sideWeight="0.6703733" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24899437" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -348,7 +596,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -358,6 +606,10 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -371,6 +623,7 @@
     <option name="ACTIVE_VCS_NAME" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
@@ -381,8 +634,6 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
     <buildFile url="file://$PROJECT_DIR$/build.xml">
-      <antCommandLine value="" />
-      <runInBackground value="true" />
       <targetFilters>
         <filter targetName="clean" isVisible="true" />
         <filter targetName="jar" isVisible="true" />
@@ -390,24 +641,103 @@
         <filter targetName="init" isVisible="true" />
         <filter targetName="all" isVisible="true" />
       </targetFilters>
-      <treeView value="true" />
-      <verbose value="true" />
-      <viewClosedWhenNoErrors value="false" />
       <expanded value="true" />
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/ui/CodeChangeAttemptDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#870#997#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1040#1439#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <marker date="1369360788000" expanded="false" signature="5058:5183" placeholder="UI Designer generated code" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="14" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4211382">
+        <state line="35" column="45" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-19.74074">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionCodeLockMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.68">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionElementLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="55" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.3076925">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/ActionRegionLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="54" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/LockDocumentListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="-15.36">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/handlers/LockedCodeModificationAttemptHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.12">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/tree/LockedClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="0" selection-start="9012" selection-end="9012" vertical-scroll-proportion="-4.8846154">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codelockplugin/LockingPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="13" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.013617021">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -440,7 +770,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Dojo-1.8.1</last-edited>
+          <last-edited>d3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -452,7 +782,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6.0.jdk</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

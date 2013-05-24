@@ -1,14 +1,13 @@
 package codelockplugin.tree;
 
+import codelockplugin.LockingPlugin;
 import com.intellij.openapi.editor.RangeMarker;
+import com.intellij.pom.Navigatable;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
-import com.intellij.pom.Navigatable;
 
 import javax.swing.tree.TreeNode;
 import java.util.Enumeration;
-
-import codelockplugin.LockingPlugin;
 
 /**
  * Represents a locked Range in a file.

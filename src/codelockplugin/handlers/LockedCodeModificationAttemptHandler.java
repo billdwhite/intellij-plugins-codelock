@@ -1,7 +1,6 @@
 package codelockplugin.handlers;
 
 import codelockplugin.ui.CodeChangeAttemptDialog;
-import codelockplugin.LockingPlugin;
 import com.intellij.openapi.editor.ReadOnlyFragmentModificationException;
 import com.intellij.openapi.editor.actionSystem.ReadonlyFragmentModificationHandler;
 

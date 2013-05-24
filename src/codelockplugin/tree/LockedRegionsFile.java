@@ -1,22 +1,19 @@
 package codelockplugin.tree;
 
-import com.intellij.openapi.editor.RangeMarker;
 import com.intellij.openapi.editor.Document;
-import com.intellij.openapi.util.JDOMExternalizable;
+import com.intellij.openapi.editor.RangeMarker;
 import com.intellij.openapi.util.InvalidDataException;
+import com.intellij.openapi.util.JDOMExternalizable;
 import com.intellij.openapi.util.WriteExternalException;
-import com.intellij.psi.PsiNamedElement;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiClass;
-
-import java.util.HashSet;
-import java.util.Enumeration;
-import java.util.List;
-
-import org.jdom.Element;
+import com.intellij.psi.PsiNamedElement;
 import org.apache.log4j.Logger;
+import org.jdom.Element;
 
 import javax.swing.tree.TreeNode;
+import java.util.Enumeration;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * represents a a file with locked regions.

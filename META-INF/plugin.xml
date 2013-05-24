@@ -9,7 +9,10 @@
     </description>
     <version>1.2</version>
     <vendor>Gil Tzadikevitch, Bill White</vendor>
-    <idea-version since-build="123.94"/>
+    <idea-version since-build="111.0001" />
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.css</depends>
     <project-components>
         <component>
             <implementation-class>codelockplugin.LockingPlugin</implementation-class>
@@ -19,7 +22,7 @@
         <action id="CodeElementLocking" class="codelockplugin.handlers.ActionElementLock" text="Lock Code"
                 description="Locks the class"/>
         <action id="CodeRegionLock" class="codelockplugin.handlers.ActionRegionLock" text="Lock Region"
-                description="Locks the selectionregion"/>
+                description="Locks the selection region"/>
         <action id="CodeLockMenu" class="codelockplugin.handlers.ActionCodeLockMenu" text="CodeLock Menu.."
                 description="open the control menu for code locking plugin"/>
         <group id="CodeLockMenuViewPopup" text="CodeLock" popup="true">

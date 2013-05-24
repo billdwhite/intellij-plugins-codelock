@@ -1,7 +1,6 @@
 package codelockplugin.tree;
 
 import com.intellij.openapi.editor.Document;
-import com.intellij.openapi.editor.RangeMarker;
 import com.intellij.openapi.util.InvalidDataException;
 import com.intellij.openapi.util.WriteExternalException;
 import com.intellij.psi.PsiElement;
@@ -11,9 +10,10 @@ import org.apache.log4j.Logger;
 import org.jdom.Element;
 
 import javax.swing.tree.TreeNode;
-import java.util.*;
-
-import codelockplugin.LockingPlugin;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Manages and holds the entire locked element and regions tree.

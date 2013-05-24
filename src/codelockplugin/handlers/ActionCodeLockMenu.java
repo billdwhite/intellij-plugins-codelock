@@ -1,7 +1,6 @@
 package codelockplugin.handlers;
 
 import codelockplugin.LockingPlugin;
-import codelockplugin.ui.LockManagerUI;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 

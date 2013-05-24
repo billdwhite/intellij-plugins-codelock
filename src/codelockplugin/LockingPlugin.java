@@ -5,7 +5,8 @@ import codelockplugin.handlers.LockedCodeModificationAttemptHandler;
 import codelockplugin.tree.LockedTreeManager;
 import codelockplugin.ui.LockManagerUI;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.actionSystem.DataKeys;
+import com.intellij.openapi.actionSystem.LangDataKeys;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
@@ -24,11 +25,9 @@ import com.intellij.psi.*;
 import com.intellij.psi.search.ProjectScope;
 import com.intellij.psi.search.PsiShortNamesCache;
 import com.intellij.ui.content.Content;
-import org.apache.log4j.*;
+import org.apache.log4j.Logger;
 import org.jdom.Element;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
 
 
 /**
@@ -51,7 +50,7 @@ public class LockingPlugin implements ProjectComponent, JDOMExternalizable {
         instance = this;
         java.net.URL imgURL = getClass().getResource("/codelockplugin/LoggerConfigFile.Logconfig");
         if (imgURL != null) {
-                //   PropertyConfigurator.configure(imgURL);
+            //   PropertyConfigurator.configure(imgURL);
 
 
         } else {
@@ -70,10 +69,6 @@ public class LockingPlugin implements ProjectComponent, JDOMExternalizable {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
         */
-
-
-
-
 
 
     }
@@ -157,31 +152,35 @@ public class LockingPlugin implements ProjectComponent, JDOMExternalizable {
 
 
     public void lockCodeElement(AnActionEvent e) {
-        PsiElement psiElement = e.getData(DataKeys.PSI_ELEMENT);
-        PsiClass g;
-        if (psiElement instanceof PsiClass) {
-            PsiClass pClass = (PsiClass) psiElement;
-            if (e.getData(DataKeys.PSI_FILE).equals(pClass.getParent())) {
-                Document document = getPsiDocumentManager().getDocument(e.getData(DataKeys.PSI_FILE));
-                LockedTreeManager.getInstance().lockClass(e.getData(DataKeys.PSI_FILE).getName(), pClass.getName(), psiElement, document);
+        try {
+            PsiElement psiElement = e.getData(LangDataKeys.PSI_ELEMENT);
+            PsiClass g;
+            if (psiElement instanceof PsiClass) {
+                PsiClass pClass = (PsiClass) psiElement;
+                if (e.getData(LangDataKeys.PSI_FILE).equals(pClass.getParent())) {
+                    Document document = getPsiDocumentManager().getDocument(e.getData(LangDataKeys.PSI_FILE));
+                    LockedTreeManager.getInstance().lockClass(e.getData(LangDataKeys.PSI_FILE).getName(), pClass.getName(), psiElement, document);
+                }
+            } else if (psiElement instanceof PsiMethod) {
+                PsiMethod pMethod = (PsiMethod) psiElement;
+                Document document = getPsiDocumentManager().getDocument(e.getData(LangDataKeys.PSI_FILE));
+                LockedTreeManager.getInstance().lockFunction(e.getData(LangDataKeys.PSI_FILE).getName(), ((PsiClass) pMethod.getParent()).getName(), pMethod.getName(), psiElement, document);
             }
-        } else if (psiElement instanceof PsiMethod) {
-            PsiMethod pMethod = (PsiMethod) psiElement;
-            Document document = getPsiDocumentManager().getDocument(e.getData(DataKeys.PSI_FILE));
-            LockedTreeManager.getInstance().lockFunction(e.getData(DataKeys.PSI_FILE).getName(), ((PsiClass) pMethod.getParent()).getName(), pMethod.getName(), psiElement, document);
+            mLockManagerUI.updateTreeVisual();
+        } catch (Error error) {
+            // catch errors
+            log.info("exception " + error);
         }
-        mLockManagerUI.updateTreeVisual();
-
 
     }
 
     public void lockCodeRegion(AnActionEvent e) {
-        Editor editor = e.getData(DataKeys.EDITOR);
+        Editor editor = e.getData(PlatformDataKeys.EDITOR);
         SelectionModel sModel = editor.getSelectionModel();
-        Document document = getPsiDocumentManager().getDocument(e.getData(DataKeys.PSI_FILE));
-        LockedTreeManager.getInstance().lockRegion(e.getData(DataKeys.PSI_FILE).getName(),
-                sModel.getSelectionStart(), sModel.getSelectionEnd(),
-                document);
+        Document document = getPsiDocumentManager().getDocument(e.getData(LangDataKeys.PSI_FILE));
+        LockedTreeManager.getInstance().lockRegion(e.getData(LangDataKeys.PSI_FILE).getName(),
+            sModel.getSelectionStart(), sModel.getSelectionEnd(),
+            document);
         mLockManagerUI.updateTreeVisual();
 
     }

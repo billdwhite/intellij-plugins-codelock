@@ -4,7 +4,10 @@ import codelockplugin.LockingPlugin;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.util.InvalidDataException;
 import com.intellij.openapi.util.WriteExternalException;
-import com.intellij.psi.*;
+import com.intellij.psi.PsiClass;
+import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiNamedElement;
 import org.apache.log4j.Logger;
 import org.jdom.Element;
 
